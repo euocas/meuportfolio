@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campanha Digital — Douglas Castro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .cover-gradient {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%);
+    }
+    .cover-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,.05) 1.5px, transparent 1.5px);
+      background-size: 22px 22px;
+    }
+    .cover-gradient::after {
+      content: '❋';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      color: rgba(255,255,255,.08);
+    }
+    .img-g1 { background: linear-gradient(135deg, #064e3b, #10B98130); }
+    .img-g2 { background: linear-gradient(135deg, #065f46, #06403233); }
+    .img-g3 { background: linear-gradient(135deg, #047857, #064e3b); }
+    .img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: rgba(255,255,255,.18);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-dot"></span>Douglas Castro
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html#home"      class="nav__link">Home</a></li>
+          <li><a href="index.html#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="index.html#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="index.html#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="index.html#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="container project-hero__inner">
+
+      <div class="project-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="index.html#trabalhos">Trabalhos</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Campanha Digital</span>
+        </nav>
+
+        <div class="project-hero__meta">
+          <span class="section__tag">Digital</span>
+        </div>
+
+        <h1 class="project-hero__title">Campanha<br />Digital</h1>
+
+        <p class="project-hero__desc">
+          Produção completa de peças para campanha de redes sociais, banners web
+          e e-mail marketing — identidade visual coesa em todos os canais digitais.
+        </p>
+
+        <div class="project-hero__info">
+          <div class="project-info-item">
+            <span class="project-info-item__label">Categoria</span>
+            <span class="project-info-item__value">Marketing Digital</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ano</span>
+            <span class="project-info-item__value">2023</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Peças criadas</span>
+            <span class="project-info-item__value">+30 formatos</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Canais</span>
+            <span class="project-info-item__value">Insta, Meta, Email</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero__visual">
+        <div class="project-hero__cover">
+          <div class="project-hero__cover-bg cover-gradient"></div>
+        </div>
+        <div class="project-hero__decor"></div>
+      </div>
+    </div>
+    <div class="project-hero__bg-circle" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- CORPO DO PROJETO -->
+  <section class="project-body">
+    <div class="container project-body__inner">
+
+      <article class="project-content">
+
+        <h2>Desafio</h2>
+        <p>
+          O desafio era criar uma campanha visualmente impactante que mantivesse
+          consistência entre formatos completamente diferentes — do story vertical
+          de 9:16 ao banner horizontal de e-mail, passando por posts quadrados e
+          anúncios para Meta Ads.
+        </p>
+        <p>
+          Cada formato exige decisões diferentes de hierarquia e composição,
+          mas o conjunto precisa parecer parte de um mesmo sistema visual coeso.
+        </p>
+
+        <div class="project-gallery project-gallery--3">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Post Feed</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Stories</span>
+          </div>
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Banner</span>
+          </div>
+        </div>
+
+        <h2>Estratégia visual</h2>
+        <p>
+          O sistema foi construído com base em um grid modular que se adapta a
+          cada formato, mantendo os elementos-chave (logo, headline, CTA) em
+          posições que funcionam mesmo com leituras rápidas em scroll.
+        </p>
+
+        <ul>
+          <li>Definição de sistema de grid adaptável para todos os formatos</li>
+          <li>Criação de 6 variações de cor para A/B testing de performance</li>
+          <li>Desenvolvimento de templates editáveis para próximas campanhas</li>
+          <li>Adaptação de cada peça para diretrizes de cada plataforma</li>
+          <li>Animações simples exportadas em GIF para maior engajamento</li>
+        </ul>
+
+        <div class="project-highlight">
+          <p>
+            "Consistência visual entre plataformas não é apenas estética —
+            é o que cria reconhecimento de marca e aumenta conversão."
+          </p>
+        </div>
+
+        <h2>E-mail marketing</h2>
+        <p>
+          Os templates de e-mail foram desenvolvidos respeitando as limitações de
+          renderização de diferentes clientes de e-mail, priorizando estruturas
+          simples com alto contraste e hierarquia clara.
+        </p>
+
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Newsletter</span>
+          </div>
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Promoção</span>
+          </div>
+        </div>
+
+        <h2>Resultados</h2>
+        <p>
+          A campanha foi entregue com 32 peças finais em diferentes formatos,
+          acompanhadas de um guia de uso para a equipe de marketing do cliente.
+          Os templates criados reduziram o tempo de produção das campanhas seguintes em 60%.
+        </p>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Ferramentas</p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Photoshop</span>
+            <span class="sidebar-tag">Illustrator</span>
+            <span class="sidebar-tag">InDesign</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Escopo</p>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Peças</span>
+              <span class="sidebar-list__val">+30 formatos</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Canais</span>
+              <span class="sidebar-list__val">3 plataformas</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Duração</span>
+              <span class="sidebar-list__val">2 semanas</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Templates</span>
+              <span class="sidebar-list__val">8 editáveis</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Precisa de peças?</p>
+          <div class="sidebar-cta">
+            <a href="index.html#contato" class="btn btn--primary">Solicitar orçamento</a>
+            <a href="index.html#trabalhos" class="btn btn--ghost">Ver outros projetos</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav" aria-label="Navegação entre projetos">
+    <div class="container project-nav__inner">
+      <a href="projeto-ensaio-urbano.html" class="project-nav__link project-nav__link--prev">
+        <span class="project-nav__label">← Anterior</span>
+        <span class="project-nav__name">Ensaio Urbano</span>
+      </a>
+      <div class="project-nav__center">
+        <a href="index.html#trabalhos" class="project-nav__all">⊞ Todos os projetos</a>
+      </div>
+      <a href="projeto-editorial-magazine.html" class="project-nav__link project-nav__link--next">
+        <span class="project-nav__label">Próximo →</span>
+        <span class="project-nav__name">Editorial Magazine</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-dot"></span>Douglas Castro
+        <p class="footer__tagline">Do visual ao código.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">© 2025 Douglas Castro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

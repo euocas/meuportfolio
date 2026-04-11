@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Magazine — Douglas Castro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .cover-gradient {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%);
+    }
+    .cover-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .cover-gradient::after {
+      content: '◈';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      color: rgba(255,255,255,.08);
+    }
+    .img-g1 { background: linear-gradient(160deg, #1e1b4b, #312e81); }
+    .img-g2 { background: linear-gradient(160deg, #312e81, #3730a3); }
+    .img-g3 { background: linear-gradient(160deg, #3730a3, #1e1b4b); }
+    .img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: rgba(255,255,255,.18);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-dot"></span>Douglas Castro
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html#home"      class="nav__link">Home</a></li>
+          <li><a href="index.html#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="index.html#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="index.html#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="index.html#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="container project-hero__inner">
+
+      <div class="project-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="index.html#trabalhos">Trabalhos</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Editorial Magazine</span>
+        </nav>
+
+        <div class="project-hero__meta">
+          <span class="section__tag">Design</span>
+        </div>
+
+        <h1 class="project-hero__title">Editorial<br />Magazine</h1>
+
+        <p class="project-hero__desc">
+          Diagramação completa de uma revista de 48 páginas — grid editorial refinado,
+          hierarquia tipográfica precisa e ritmo visual consistente do início ao fim.
+        </p>
+
+        <div class="project-hero__info">
+          <div class="project-info-item">
+            <span class="project-info-item__label">Categoria</span>
+            <span class="project-info-item__value">Design Editorial</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ano</span>
+            <span class="project-info-item__value">2023</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ferramenta</span>
+            <span class="project-info-item__value">InDesign</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Páginas</span>
+            <span class="project-info-item__value">48 páginas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero__visual">
+        <div class="project-hero__cover">
+          <div class="project-hero__cover-bg cover-gradient"></div>
+        </div>
+        <div class="project-hero__decor"></div>
+      </div>
+    </div>
+    <div class="project-hero__bg-circle" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- CORPO DO PROJETO -->
+  <section class="project-body">
+    <div class="container project-body__inner">
+
+      <article class="project-content">
+
+        <h2>O projeto editorial</h2>
+        <p>
+          Este projeto explorou os fundamentos do design editorial aplicados a uma
+          revista de cultura e comportamento. O objetivo principal foi criar um
+          sistema de grid que garantisse flexibilidade criativa sem abrir mão
+          da consistência visual ao longo das 48 páginas.
+        </p>
+        <p>
+          O desafio editorial mais interessante foi equilibrar seções com densidades
+          diferentes de texto — matérias longas, ensaios fotográficos e infográficos
+          — mantendo um ritmo de leitura agradável.
+        </p>
+
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Capa</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Sumário</span>
+          </div>
+        </div>
+
+        <h2>Sistema tipográfico</h2>
+        <p>
+          A hierarquia tipográfica foi construída com dois typefaces: uma serif clássica
+          para títulos e chamadas, e uma sans-serif para o corpo de texto.
+          A combinação criou personalidade editorial sem sacrificar legibilidade.
+        </p>
+
+        <ul>
+          <li>Grid de 12 colunas com variações para layouts de 2, 3 e 4 colunas</li>
+          <li>Sistema de estilos de parágrafo com 14 variações diferentes</li>
+          <li>Páginas-mestre para 6 tipos de layout recorrentes na publicação</li>
+          <li>Formatação de legendas, notas de rodapé e destaques laterais</li>
+          <li>Paleta de 3 cores de destaque aplicadas em seções temáticas</li>
+        </ul>
+
+        <div class="project-highlight">
+          <p>
+            "Bom design editorial é quase invisível — o leitor flui pelo conteúdo
+            sem perceber o sistema que organiza tudo por trás."
+          </p>
+        </div>
+
+        <h2>Spreads internos</h2>
+
+        <div class="project-gallery project-gallery--3">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Matéria</span>
+          </div>
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Ensaio</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Infográfico</span>
+          </div>
+        </div>
+
+        <h2>Processo no InDesign</h2>
+        <p>
+          Todo o projeto foi desenvolvido no InDesign com atenção especial ao uso
+          de estilos de objeto e parágrafo, master pages e bibliotecas de elementos.
+          Essa organização garantiu que revisões de conteúdo não comprometessem
+          o layout das páginas adjacentes.
+        </p>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Ferramentas</p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">InDesign</span>
+            <span class="sidebar-tag">Illustrator</span>
+            <span class="sidebar-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Escopo técnico</p>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Páginas</span>
+              <span class="sidebar-list__val">48</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Grid</span>
+              <span class="sidebar-list__val">12 colunas</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Estilos</span>
+              <span class="sidebar-list__val">14 variações</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Duração</span>
+              <span class="sidebar-list__val">4 semanas</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Precisa de editorial?</p>
+          <div class="sidebar-cta">
+            <a href="index.html#contato" class="btn btn--primary">Solicitar orçamento</a>
+            <a href="index.html#trabalhos" class="btn btn--ghost">Ver outros projetos</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav" aria-label="Navegação entre projetos">
+    <div class="container project-nav__inner">
+      <a href="projeto-campanha-digital.html" class="project-nav__link project-nav__link--prev">
+        <span class="project-nav__label">← Anterior</span>
+        <span class="project-nav__name">Campanha Digital</span>
+      </a>
+      <div class="project-nav__center">
+        <a href="index.html#trabalhos" class="project-nav__all">⊞ Todos os projetos</a>
+      </div>
+      <a href="projeto-retratos-luz.html" class="project-nav__link project-nav__link--next">
+        <span class="project-nav__label">Próximo →</span>
+        <span class="project-nav__name">Retratos & Luz</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-dot"></span>Douglas Castro
+        <p class="footer__tagline">Do visual ao código.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">© 2025 Douglas Castro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

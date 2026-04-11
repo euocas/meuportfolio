@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identidade Visual Brand X — Douglas Castro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Gradientes específicos deste projeto */
+    .cover-gradient {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+    .cover-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .cover-gradient::after {
+      content: '✦';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: rgba(255,255,255,.1);
+    }
+    .img-g1 { background: linear-gradient(135deg, #0f3460, #16213e); }
+    .img-g2 { background: linear-gradient(135deg, #1a1a2e, #2563EB22); }
+    .img-g3 { background: linear-gradient(135deg, #16213e, #10B98122); }
+    .img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: rgba(255,255,255,.2);
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-dot"></span>Douglas Castro
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html#home"      class="nav__link">Home</a></li>
+          <li><a href="index.html#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="index.html#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="index.html#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="index.html#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="container project-hero__inner">
+
+      <!-- Lado esquerdo: texto -->
+      <div class="project-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="index.html#trabalhos">Trabalhos</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Identidade Visual Brand X</span>
+        </nav>
+
+        <div class="project-hero__meta">
+          <span class="section__tag">Design</span>
+        </div>
+
+        <h1 class="project-hero__title">Identidade Visual<br />Brand X</h1>
+
+        <p class="project-hero__desc">
+          Criação completa da identidade visual de uma marca fictícia de tecnologia —
+          do conceito ao manual de marca, passando por logo, paleta, tipografia e aplicações.
+        </p>
+
+        <div class="project-hero__info">
+          <div class="project-info-item">
+            <span class="project-info-item__label">Categoria</span>
+            <span class="project-info-item__value">Branding & Design</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ano</span>
+            <span class="project-info-item__value">2024</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ferramentas</span>
+            <span class="project-info-item__value">Illustrator, InDesign</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Duração</span>
+            <span class="project-info-item__value">3 semanas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lado direito: imagem -->
+      <div class="project-hero__visual">
+        <div class="project-hero__cover">
+          <div class="project-hero__cover-bg cover-gradient"></div>
+        </div>
+        <div class="project-hero__decor"></div>
+      </div>
+    </div>
+    <div class="project-hero__bg-circle" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- CORPO DO PROJETO -->
+  <section class="project-body">
+    <div class="container project-body__inner">
+
+      <!-- Conteúdo principal -->
+      <article class="project-content">
+
+        <h2>Sobre o projeto</h2>
+        <p>
+          Brand X é um projeto de identidade visual desenvolvido para explorar o processo
+          completo de criação de marca. O desafio era construir uma identidade que transmitisse
+          inovação e confiabilidade para uma empresa de tecnologia, mantendo linguagem visual limpa e moderna.
+        </p>
+        <p>
+          O projeto nasceu de uma pesquisa aprofundada sobre referências do setor,
+          análise de concorrentes e definição de arquétipos de marca.
+        </p>
+
+        <!-- Galeria 1 -->
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Logotipo</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Variações</span>
+          </div>
+        </div>
+
+        <h2>Processo criativo</h2>
+        <p>
+          O processo iniciou com um moodboard detalhado, seguido de esboços à mão livre
+          que exploraram diferentes direções visuais. Após revisões com o cliente fictício,
+          a direção geométrica foi escolhida por sua versatilidade e modernidade.
+        </p>
+
+        <ul>
+          <li>Pesquisa de mercado e benchmarking com 12 empresas do setor</li>
+          <li>Criação de 3 direções visuais distintas para apresentação</li>
+          <li>Refinamento do logotipo escolhido com ajustes de espessura e proporções</li>
+          <li>Desenvolvimento da paleta cromática primária e secundária</li>
+          <li>Seleção tipográfica e definição de hierarquia visual</li>
+        </ul>
+
+        <div class="project-highlight">
+          <p>
+            "A identidade visual não é apenas um logo — é o sistema completo que garante
+            consistência em todos os pontos de contato com o público."
+          </p>
+        </div>
+
+        <h2>Entregáveis</h2>
+        <p>
+          O projeto resultou em um manual de marca completo, cobrindo todas as diretrizes
+          de uso da identidade visual em diferentes contextos e mídias.
+        </p>
+
+        <!-- Galeria 2 -->
+        <div class="project-gallery project-gallery--3">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Papelaria</span>
+          </div>
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Digital</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Manual</span>
+          </div>
+        </div>
+
+        <h2>Resultado</h2>
+        <p>
+          A identidade final equilibra modernidade e sofisticação, com um logotipo
+          versátil que funciona desde favicons até outdoors. O manual de marca garante
+          aplicação consistente em todos os materiais da empresa.
+        </p>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Ferramentas utilizadas</p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Illustrator</span>
+            <span class="sidebar-tag">InDesign</span>
+            <span class="sidebar-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Detalhes</p>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Tipo</span>
+              <span class="sidebar-list__val">Branding</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Ano</span>
+              <span class="sidebar-list__val">2024</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Duração</span>
+              <span class="sidebar-list__val">3 semanas</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Páginas</span>
+              <span class="sidebar-list__val">Manual 48p</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Gostou do resultado?</p>
+          <div class="sidebar-cta">
+            <a href="index.html#contato" class="btn btn--primary">Solicitar orçamento</a>
+            <a href="index.html#trabalhos" class="btn btn--ghost">Ver outros projetos</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav" aria-label="Navegação entre projetos">
+    <div class="container project-nav__inner">
+      <span></span><!-- sem anterior -->
+      <div class="project-nav__center">
+        <a href="index.html#trabalhos" class="project-nav__all">
+          ⊞ Todos os projetos
+        </a>
+      </div>
+      <a href="projeto-ensaio-urbano.html" class="project-nav__link project-nav__link--next">
+        <span class="project-nav__label">Próximo →</span>
+        <span class="project-nav__name">Ensaio Urbano</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-dot"></span>Douglas Castro
+        <p class="footer__tagline">Do visual ao código.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">© 2025 Douglas Castro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

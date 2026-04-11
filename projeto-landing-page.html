@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Conceito — Douglas Castro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .cover-gradient {
+      background: linear-gradient(135deg, #14532d 0%, #15803d 50%, #16a34a 100%);
+    }
+    .cover-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 18px 18px;
+    }
+    .cover-gradient::after {
+      content: '</>';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+      font-size: 3.5rem;
+      color: rgba(255,255,255,.1);
+      letter-spacing: -0.05em;
+    }
+    .img-g1 { background: linear-gradient(160deg, #14532d, #15803d); }
+    .img-g2 { background: linear-gradient(160deg, #15803d, #16a34a); }
+    .img-g3 { background: linear-gradient(160deg, #16a34a, #14532d); }
+
+    /* Code block decorativo */
+    .code-block {
+      background: #111827;
+      border-radius: var(--radius-md);
+      padding: var(--space-md) var(--space-lg);
+      margin-block: var(--space-lg);
+      overflow-x: auto;
+      border: 1px solid #1f2937;
+    }
+    .code-block code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.875rem;
+      line-height: 1.8;
+      color: #d1fae5;
+      display: block;
+      white-space: pre;
+    }
+    .code-block .token-tag   { color: #6ee7b7; }
+    .code-block .token-attr  { color: #93c5fd; }
+    .code-block .token-value { color: #fcd34d; }
+    .code-block .token-text  { color: #d1d5db; }
+
+    .img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: rgba(255,255,255,.18);
+      letter-spacing: 0.08em;
+    }
+
+    /* Badge "Em progresso" */
+    .progress-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--clr-blue);
+      background: var(--clr-blue-lt);
+      border: 1px solid #bfdbfe;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-dot"></span>Douglas Castro
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html#home"      class="nav__link">Home</a></li>
+          <li><a href="index.html#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="index.html#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="index.html#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="index.html#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="container project-hero__inner">
+
+      <div class="project-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="index.html#trabalhos">Trabalhos</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Landing Page Conceito</span>
+        </nav>
+
+        <span class="progress-badge">⚡ Front-end em desenvolvimento</span>
+
+        <div class="project-hero__meta">
+          <span class="section__tag">Front-end</span>
+        </div>
+
+        <h1 class="project-hero__title">Landing Page<br />Conceito</h1>
+
+        <p class="project-hero__desc">
+          Primeiro projeto front-end de destaque — landing page responsiva desenvolvida
+          com HTML e CSS puros, aplicando fundamentos sólidos de design de interface.
+        </p>
+
+        <div class="project-hero__info">
+          <div class="project-info-item">
+            <span class="project-info-item__label">Categoria</span>
+            <span class="project-info-item__value">Front-end</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ano</span>
+            <span class="project-info-item__value">2025</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Tecnologias</span>
+            <span class="project-info-item__value">HTML5, CSS3</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Status</span>
+            <span class="project-info-item__value">Em progresso</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero__visual">
+        <div class="project-hero__cover">
+          <div class="project-hero__cover-bg cover-gradient"></div>
+        </div>
+        <div class="project-hero__decor"></div>
+      </div>
+    </div>
+    <div class="project-hero__bg-circle" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- CORPO DO PROJETO -->
+  <section class="project-body">
+    <div class="container project-body__inner">
+
+      <article class="project-content">
+
+        <h2>A transição do design para o código</h2>
+        <p>
+          Este projeto marca um ponto de inflexão na minha trajetória: a aplicação
+          prática dos conhecimentos de front-end para construir algo do zero.
+          A escolha de começar com HTML e CSS puros foi intencional — entender
+          os fundamentos antes de adicionar camadas de abstração.
+        </p>
+        <p>
+          O projeto de uma landing page foi escolhido justamente por exigir
+          atenção simultânea a hierarquia visual, responsividade, semântica HTML
+          e organização de CSS — todos os pilares do desenvolvimento front-end.
+        </p>
+
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Desktop</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Mobile</span>
+          </div>
+        </div>
+
+        <h2>O que foi construído</h2>
+        <p>
+          A página foi desenvolvida com foco em boas práticas desde o início:
+          HTML semântico, CSS organizado em seções comentadas, variáveis customizadas
+          e abordagem mobile-first para a responsividade.
+        </p>
+
+        <ul>
+          <li>HTML semântico com tags corretas para cada contexto</li>
+          <li>CSS com variáveis customizadas para paleta e tipografia</li>
+          <li>Layout responsivo com media queries mobile-first</li>
+          <li>Menu mobile funcional usando apenas o checkbox hack do CSS</li>
+          <li>Animações e transições suaves sem nenhum JavaScript</li>
+          <li>Scroll suave via <code>scroll-behavior: smooth</code></li>
+        </ul>
+
+        <!-- Code block decorativo -->
+        <div class="code-block" aria-label="Exemplo de código CSS">
+          <code><span class="token-tag">:root</span> <span class="token-text">{</span>
+  <span class="token-attr">--clr-green</span><span class="token-text">:</span>  <span class="token-value">#10B981</span><span class="token-text">;</span>
+  <span class="token-attr">--clr-blue</span><span class="token-text">:</span>   <span class="token-value">#2563EB</span><span class="token-text">;</span>
+  <span class="token-attr">--font-display</span><span class="token-text">:</span> <span class="token-value">'Playfair Display'</span><span class="token-text">;</span>
+  <span class="token-attr">--transition</span><span class="token-text">:</span> <span class="token-value">0.25s cubic-bezier(0.4,0,0.2,1)</span><span class="token-text">;</span>
+<span class="token-text">}</span></code>
+        </div>
+
+        <div class="project-highlight">
+          <p>
+            "Saber design me deu uma vantagem inesperada no front-end:
+            já sei o que o código precisa produzir antes de começar a escrever."
+          </p>
+        </div>
+
+        <h2>Diferenciais do meu approach</h2>
+        <p>
+          Vir do design dá uma perspectiva diferente na hora de escrever código de interface.
+          Enquanto aprendo as técnicas, já tenho intuição sobre espaçamento, hierarquia,
+          contraste e ritmo visual — o que acelera decisões e evita erros comuns.
+        </p>
+
+        <div class="project-gallery project-gallery--3">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Tipografia</span>
+          </div>
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Componentes</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Responsivo</span>
+          </div>
+        </div>
+
+        <h2>Próximos passos</h2>
+        <p>
+          O projeto continua evoluindo. Os próximos passos incluem aprofundar
+          CSS Grid e Flexbox em layouts mais complexos, explorar animações com
+          CSS Keyframes e iniciar o aprendizado de JavaScript para adicionar
+          interatividade dinâmica.
+        </p>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Tecnologias</p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">HTML5</span>
+            <span class="sidebar-tag">CSS3</span>
+            <span class="sidebar-tag">Flexbox</span>
+            <span class="sidebar-tag">Grid</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Detalhes técnicos</p>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">JS usado</span>
+              <span class="sidebar-list__val">Zero</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Responsivo</span>
+              <span class="sidebar-list__val">3 breakpoints</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Acessível</span>
+              <span class="sidebar-list__val">Semântico</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Status</span>
+              <span class="sidebar-list__val">Em evolução</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Quer trabalhar juntos?</p>
+          <div class="sidebar-cta">
+            <a href="index.html#contato" class="btn btn--primary">Entrar em contato</a>
+            <a href="index.html#trabalhos" class="btn btn--ghost">Ver outros projetos</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav" aria-label="Navegação entre projetos">
+    <div class="container project-nav__inner">
+      <a href="projeto-retratos-luz.html" class="project-nav__link project-nav__link--prev">
+        <span class="project-nav__label">← Anterior</span>
+        <span class="project-nav__name">Retratos & Luz</span>
+      </a>
+      <div class="project-nav__center">
+        <a href="index.html#trabalhos" class="project-nav__all">⊞ Todos os projetos</a>
+      </div>
+      <a href="projeto-identidade-brand-x.html" class="project-nav__link project-nav__link--next">
+        <span class="project-nav__label">Voltar ao início →</span>
+        <span class="project-nav__name">Identidade Visual Brand X</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-dot"></span>Douglas Castro
+        <p class="footer__tagline">Do visual ao código.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">© 2025 Douglas Castro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

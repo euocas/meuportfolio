@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ensaio Urbano — Douglas Castro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .cover-gradient {
+      background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 50%, #404040 100%);
+    }
+    .cover-gradient::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .cover-gradient::after {
+      content: '◎';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      color: rgba(255,255,255,.08);
+    }
+    .img-g1 { background: linear-gradient(160deg, #1c1c1c, #3a3a3a); }
+    .img-g2 { background: linear-gradient(160deg, #2d2d2d, #1c1c1c); }
+    .img-g3 { background: linear-gradient(160deg, #404040, #2d2d2d); }
+    .img-g4 { background: linear-gradient(160deg, #1c1c1c, #404040); }
+    .img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: rgba(255,255,255,.18);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-dot"></span>Douglas Castro
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html#home"      class="nav__link">Home</a></li>
+          <li><a href="index.html#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="index.html#trabalhos" class="nav__link">Trabalhos</a></li>
+          <li><a href="index.html#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="index.html#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="container project-hero__inner">
+
+      <div class="project-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="index.html#trabalhos">Trabalhos</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Ensaio Urbano</span>
+        </nav>
+
+        <div class="project-hero__meta">
+          <span class="section__tag">Fotografia</span>
+        </div>
+
+        <h1 class="project-hero__title">Ensaio<br />Urbano</h1>
+
+        <p class="project-hero__desc">
+          Série fotográfica que explora a geometria, as texturas e a luz natural
+          da cidade — encontrando beleza silenciosa nas estruturas do cotidiano.
+        </p>
+
+        <div class="project-hero__info">
+          <div class="project-info-item">
+            <span class="project-info-item__label">Categoria</span>
+            <span class="project-info-item__value">Fotografia Urbana</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Ano</span>
+            <span class="project-info-item__value">2024</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Local</span>
+            <span class="project-info-item__value">Praia Grande – SP</span>
+          </div>
+          <div class="project-info-item">
+            <span class="project-info-item__label">Fotos</span>
+            <span class="project-info-item__value">24 finais</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero__visual">
+        <div class="project-hero__cover">
+          <div class="project-hero__cover-bg cover-gradient"></div>
+        </div>
+        <div class="project-hero__decor"></div>
+      </div>
+    </div>
+    <div class="project-hero__bg-circle" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- CORPO DO PROJETO -->
+  <section class="project-body">
+    <div class="container project-body__inner">
+
+      <article class="project-content">
+
+        <h2>Conceito</h2>
+        <p>
+          "Ensaio Urbano" nasceu de um exercício de atenção: fotografar a cidade como
+          se fosse a primeira vez. A série explora como linhas, sombras e repetições
+          arquitetônicas formam composições quase abstratas quando vistas com olhar atento.
+        </p>
+        <p>
+          O desafio técnico foi capturar essa geometria usando apenas luz natural,
+          sem flash ou iluminação artificial, respeitando o ambiente e preservando
+          a atmosfera real de cada cena.
+        </p>
+
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Linhas</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Sombras</span>
+          </div>
+        </div>
+
+        <h2>Direção visual</h2>
+        <p>
+          A paleta foi intencionalmente dessaturada em pós-produção, acentuando
+          contraste e texturas. Cada imagem passou por tratamento individual no
+          Lightroom e Photoshop para garantir coesão na série.
+        </p>
+
+        <ul>
+          <li>Shooting de 3 dias em diferentes horários e condições de luz</li>
+          <li>Mais de 400 fotos capturadas, 24 selecionadas para a série final</li>
+          <li>Pós-produção com tratamento de cor consistente entre os frames</li>
+          <li>Composição baseada na regra dos terços e linhas de fuga</li>
+        </ul>
+
+        <div class="project-highlight">
+          <p>
+            "A cidade fala — basta aprender a olhar nos lugares onde as pessoas
+            raramente pausam o olhar."
+          </p>
+        </div>
+
+        <h2>Galeria selecionada</h2>
+
+        <div class="project-gallery project-gallery--3">
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Fachada</span>
+          </div>
+          <div class="project-gallery__item img-g3">
+            <span class="img-label">Calçada</span>
+          </div>
+          <div class="project-gallery__item img-g2">
+            <span class="img-label">Reflexo</span>
+          </div>
+        </div>
+
+        <div class="project-gallery project-gallery--2">
+          <div class="project-gallery__item img-g4">
+            <span class="img-label">Escada</span>
+          </div>
+          <div class="project-gallery__item img-g1">
+            <span class="img-label">Janelas</span>
+          </div>
+        </div>
+
+        <h2>Aprendizados</h2>
+        <p>
+          Este projeto consolidou a importância da paciência e da observação na fotografia.
+          A melhor foto raramente é a primeira — é a que aparece depois de aguardar
+          a luz certa ou o momento em que o espaço se organiza naturalmente.
+        </p>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Equipamento & Ferramentas</p>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">Câmera DSLR</span>
+            <span class="sidebar-tag">Lightroom</span>
+            <span class="sidebar-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Detalhes técnicos</p>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Tipo</span>
+              <span class="sidebar-list__val">Série fotográfica</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Fotos finais</span>
+              <span class="sidebar-list__val">24</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Shooting</span>
+              <span class="sidebar-list__val">3 dias</span>
+            </li>
+            <li class="sidebar-list__item">
+              <span class="sidebar-list__key">Estilo</span>
+              <span class="sidebar-list__val">Documental</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__title">Precisa de fotografia?</p>
+          <div class="sidebar-cta">
+            <a href="index.html#contato" class="btn btn--primary">Falar comigo</a>
+            <a href="index.html#trabalhos" class="btn btn--ghost">Ver outros projetos</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav" aria-label="Navegação entre projetos">
+    <div class="container project-nav__inner">
+      <a href="projeto-identidade-brand-x.html" class="project-nav__link project-nav__link--prev">
+        <span class="project-nav__label">← Anterior</span>
+        <span class="project-nav__name">Identidade Visual Brand X</span>
+      </a>
+      <div class="project-nav__center">
+        <a href="index.html#trabalhos" class="project-nav__all">⊞ Todos os projetos</a>
+      </div>
+      <a href="projeto-campanha-digital.html" class="project-nav__link project-nav__link--next">
+        <span class="project-nav__label">Próximo →</span>
+        <span class="project-nav__name">Campanha Digital</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-dot"></span>Douglas Castro
+        <p class="footer__tagline">Do visual ao código.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer__copy">© 2025 Douglas Castro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
